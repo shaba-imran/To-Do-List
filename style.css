@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center; /* Centers items vertically */
+    align-items: center; /* Centers items horizontally */
+    min-height: 100vh;
+}
+
+.todo-container {
+    background: #fff;
+    padding: 45px 20px;
+    border-radius: 10px;
+    width: 800px;
+    height: 50vh;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 { text-align: center; }
+
+input {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover { background: #218838; }
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.delete {
+    background: red;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
